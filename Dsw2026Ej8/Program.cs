@@ -1,6 +1,7 @@
 ﻿using Dsw2026Ej8.Problema_1;
 using Dsw2026Ej8.Problema_2;
 using Dsw2026Ej8.Problema_3;
+using Dsw2026Ej8.Problema_4;
 
 namespace Dsw2026Ej8
 {
@@ -33,10 +34,22 @@ namespace Dsw2026Ej8
 
             string resultado4 = p3.CompararCopias(1234,producto);
 
-        
-
             Console.WriteLine(resultado4);
-     
+
+
+
+            Console.WriteLine("     ----------  Problema 4 ----------       ");
+
+          Problema4 p4 = new Problema4();
+
+            double resultado5 = p4.CalcularPromedio(null, 6, 12);
+            double resultado6 = p4.CalcularPromedio(5, 6, 8);
+            double resultado7 = p4.CalcularPromedio(null, null, null);
+
+            Console.WriteLine($"Promedio de null, 6, 12 = {resultado5}");
+            Console.WriteLine($"Promedio de 5, 6, 8 = {resultado6}");
+            Console.WriteLine($"Promedio de null, null, null = {resultado7}");
+
 
         }
     }
