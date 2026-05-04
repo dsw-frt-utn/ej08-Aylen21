@@ -1,5 +1,6 @@
 ﻿using Dsw2026Ej8.Problema_1;
 using Dsw2026Ej8.Problema_2;
+using Dsw2026Ej8.Problema_3;
 
 namespace Dsw2026Ej8
 {
@@ -25,7 +26,17 @@ namespace Dsw2026Ej8
             Console.WriteLine(resultado2);
             Console.WriteLine(resultado3);
 
+            Console.WriteLine("     ----------  Problema 3 ----------       ");
 
+            Product producto = new Product("Mouse Inalambrico");
+            Problema3 p3 = new Problema3();
+
+            string resultado4 = p3.CompararCopias(1234,producto);
+
+        
+
+            Console.WriteLine(resultado4);
+     
 
         }
     }
