@@ -3,6 +3,7 @@ using Dsw2026Ej8.Problema_2;
 using Dsw2026Ej8.Problema_3;
 using Dsw2026Ej8.Problema_4;
 using Dsw2026Ej8.Problema_5;
+using Dsw2026Ej8.Problema_6;
 
 namespace Dsw2026Ej8
 {
@@ -48,7 +49,7 @@ namespace Dsw2026Ej8
             double resultado7 = p4.CalcularPromedio(null, null, null);
 
             Console.WriteLine($"Promedio de null, 6, 12 = {resultado5}");
-            Console.WriteLine($"Promedio de 5, 6, 8 = {resultado6}");
+            Console.WriteLine($"Promedio de 5, 6, 8     = {resultado6}");
             Console.WriteLine($"Promedio de null, null, null = {resultado7}");
 
             
@@ -61,9 +62,14 @@ namespace Dsw2026Ej8
             Console.WriteLine($"Sale R Importe Final: {p5.ObtenerImporteFinal(s1)}");
             Console.WriteLine($"Sale W Importe Final: {p5.ObtenerImporteFinal(s2)}");
 
+            Console.WriteLine("     ----------  Problema 6 ----------       ");
+
+            Problema6 p6 = new Problema6();
 
 
 
+            Console.WriteLine($"Codigo Ingresado ab 123 x -> Codigo Normalizado: {p6.NormalizarCodigoProducto(" ab 123 x ")}");
+            Console.WriteLine($"Codigo Ingresado null     -> Codigo Normalizado:{p6.NormalizarCodigoProducto(null)}");
 
 
 
