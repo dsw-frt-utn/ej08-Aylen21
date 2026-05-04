@@ -2,6 +2,7 @@
 using Dsw2026Ej8.Problema_2;
 using Dsw2026Ej8.Problema_3;
 using Dsw2026Ej8.Problema_4;
+using Dsw2026Ej8.Problema_5;
 
 namespace Dsw2026Ej8
 {
@@ -49,6 +50,21 @@ namespace Dsw2026Ej8
             Console.WriteLine($"Promedio de null, 6, 12 = {resultado5}");
             Console.WriteLine($"Promedio de 5, 6, 8 = {resultado6}");
             Console.WriteLine($"Promedio de null, null, null = {resultado7}");
+
+            
+            Console.WriteLine("     ----------  Problema 5 ----------       ");
+            Problema5 p5 = new Problema5();
+
+            Sale s1 = new RetailSale(100m);
+            Sale s2 = new WholesaleSale(100m);
+
+            Console.WriteLine($"Sale R Importe Final: {p5.ObtenerImporteFinal(s1)}");
+            Console.WriteLine($"Sale W Importe Final: {p5.ObtenerImporteFinal(s2)}");
+
+
+
+
+
 
 
         }
